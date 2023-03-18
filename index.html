@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="discription" class="discription">Thank you for taking the time to help us improve the platform</p><br>
+</header>
+<main>
+  <form id="survey-form">
+    <label for="name"> Name <input id="name" name="name" type="text" placeholder="Enter Your Name" require /></label><br><br>
+    <label for="email">Email<input id="email" name="email" type="email" placeholder="Enter Your Email" require /></label><br><br>
+     <label for="age">Age <input id="age" type="number" name="age" placeholder="Enter Your Age" /></label><br><br>
+    <label for="dropdown">Which option best describes your current role?  <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+          </label><br>
+          <p id="recommend">Would you recommend freeCodeCamp to a friend?</p>
+ <label for="definitely"><input id="definitely" type="radio" name="recommend-type" class="inline" /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="recommend-type" class="inline" /> Maybe</label>
+          <label for="not-sure"><input id="not-sure" type="radio" name="recommend-type" class="inline" /> Not sure</label>
+          <p>What would you like to see improved?</p>
+    <input id="full-stack" type="checkbox"  name="full-stack" class="inline" /> Full-stack
+        </label> <br>
+        <input id="open Source Community" type="checkbox"  name="open Source Community" class="inline" /> Open Source Community
+        </label> <br>
+        <input id="wiki" type="checkbox"  name="wiki" class="inline" /> Wiki
+        </label>  <br>
+         <input id="communication-skills" type="checkbox"  name="communication-skills" class="inline" /> Communication Skills
+        </label>   <br>     
+         <input id="data-visualization" type="checkbox"  name="data-visualization" class="inline" /> Data Visualization
+        </label> <br>
+         <input id="additional-courses" type="checkbox"  name="additional-courses" class="inline" /> Additional Courses
+        </label> <br> <br>
+        <label for="suggestions"> Any comments or suggestions?
+          <textarea class="suggestions" id="suggestions" name="suggestions" rows="5" cols="50" placeholder="Enter Your Comment Here..."></textarea>
+        </label> 
+        <input type="submit" value="Submit" />     
+  </form>
+</main>
+    </body>
+    </html>
